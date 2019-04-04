@@ -1,0 +1,19 @@
+<div class="login-page">
+        <h1 style="color:rgb(18, 204, 18); text-align:center">Login</h1>
+
+    <div class="form">
+
+      <form [formGroup]="signupform" (ngSubmit)="login(signupform.value)">
+        <label style="float:left; color:  #b3b3b3">UserName</label>
+
+        <input type="text" value="email" formControlName="email" placeholder="username" required/>
+
+        <label style="float:left; color:  #b3b3b3">Password</label>
+
+        <input type="password" value="password" formControlName="password" placeholder="password" required/>
+        <button type="submit">login</button>
+        <p class="message">Not registered? <a routerLink="/register" >Create an account</a></p>
+      </form> 
+    </div>
+  </div>
+  

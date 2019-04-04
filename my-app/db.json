@@ -1,0 +1,173 @@
+{
+  "register": [
+    {
+      "firstName": "Shubhangi",
+      "lastName": "Bhargava",
+      "email": "bhargava.shubhangi304@gmail.com",
+      "phoneno": "7909949016",
+      "Address": "Jaypee University, AB Road, Raghogarh, Guna",
+      "History": "rtfg",
+      "Password": "trfg",
+      "CnfPassword": "rtfg",
+      "id": 1
+    },
+    {
+      "firstName": "robin",
+      "lastName": "singh",
+      "email": "robin@gmail",
+      "phoneno": "33",
+      "Address": "55",
+      "History": "",
+      "Password": "abc",
+      "CnfPassword": "abc",
+      "id": 2
+    },
+    {
+      "firstName": "shubhi",
+      "lastName": "Bhargava",
+      "email": "bhargava",
+      "phoneno": "7909949016",
+      "Address": "Jaypee University, AB Road, Raghogarh, Guna",
+      "History": "",
+      "Password": "asd",
+      "CnfPassword": "asd",
+      "id": 3
+    },
+    {
+      "firstName": "egvfdhg",
+      "email": "a",
+      "phoneno": "11",
+      "Address": "a",
+      "History": "a",
+      "id": 4
+    },
+    {
+      "firstName": "AyushJAAAyus====",
+      "lastName": "Bhargava-----",
+      "email": "bhargava.shubhangi304@gmail.com",
+      "phoneno": "7909949016",
+      "Address": "Jaypee University, AB Road, Raghogarh, Guna",
+      "History": "",
+      "Password": "123456`",
+      "CnfPassword": "123456`",
+      "id": 5
+    },
+    {
+      "firstName": "Ayush",
+      "lastName": "Cherkhiya",
+      "email": "ayushcher@gmail",
+      "phoneno": "585858585858",
+      "Address": "8765",
+      "History": "",
+      "Password": "123456",
+      "CnfPassword": "123456",
+      "id": 6
+    },
+    {
+      "firstName": "shubhangi",
+      "lastName": "a",
+      "email": "dfgh",
+      "phoneno": "a",
+      "Address": "a",
+      "History": "a",
+      "Password": "aa",
+      "CnfPassword": "aa",
+      "id": 7,
+      "fullName": "dfghafcvgbhm,"
+    },
+    {
+      "firstName": "Shubhangi",
+      "lastName": "Bhargava",
+      "email": "bhargava.shubhangi304@gmail.com",
+      "phoneno": "7909949016",
+      "Address": "Jaypee University, AB Road, Raghogarh, Guna",
+      "History": "",
+      "Password": "asd",
+      "CnfPassword": "asd",
+      "id": 8,
+      "fullName": "Shubhangi Bharg"
+    },
+    {
+      "firstName": "Shubhangi",
+      "lastName": "Bhargava",
+      "email": "bhargava.shubhangi304@gmail.com",
+      "phoneno": "7909949016",
+      "Address": "Jaypee University, AB Road, Raghogarh, Guna",
+      "History": "",
+      "Password": "asd",
+      "CnfPassword": "asd",
+      "id": 9
+    },
+    {
+      "firstName": "pweerere",
+      "lastName": "p",
+      "email": "p",
+      "phoneno": "7909949016",
+      "Address": "Jaypee University, AB Road, Raghogarh, Guna",
+      "History": "",
+      "Password": "p",
+      "CnfPassword": "p",
+      "id": 10
+    }
+  ],
+  "booking": [
+    {
+      "date": "19 march 1997.09:00am",
+      "name": "Shubhangi",
+      "address": "uttam nagar east NewDelhi",
+      "status": "completed"
+    },
+    {
+      "date": "3 april 2018.05:30pm",
+      "name": "Rakesh",
+      "address": "uttam nagar east NewDelhi",
+      "status": "pending"
+    },
+    {
+      "date": "5 april 2019.05:30pm",
+      "name": "Sanjay",
+      "address": "uttam nagar east NewDelhi",
+      "status": "completed"
+    }
+  ],
+  "pastbooking": [
+    {
+      "date": "14 feb 2019.08:00am",
+      "name": "Shubham",
+      "address": "chandigarh ",
+      "status": "completed"
+    },
+    {
+      "date": "3 april 2017.05:30pm",
+      "name": "Shubham",
+      "address": "chandigarh",
+      "status": "completed"
+    },
+    {
+      "date": "5 april 2019.05:30pm",
+      "name": "Shubham",
+      "address": "chandigarh",
+      "status": "completed"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "1",
+      "ques": "How will I be able to chat with the customer support?",
+      "myfaq": "You may use Net Banking, Credit/Debit Cards, PhonePe wallet. However Cash on delivery International Cards Gift Cards are not acceptable modes of payment. The acceptable payment methods shall be visible to you at the checkout."
+    },
+    {
+      "id": "2",
+      "ques": "Why am not able to access payment gateway?",
+      "myfaq": " Please click on this link to chat with the customer care and our customer care executive will help you with your query within 12 hrs."
+    },
+    {
+      "id": "3",
+      "ques": "How to link my PayTm wallet?",
+      "myfaq": "When you chose to link it will check wether your mobile number is registered with any banks. After checking the bank accounts linked to your mobile number will be displayed. You have to select your bank and have to set a UPI pin( in case you are not registered with BHIM UPI). If you're an existing BHIM customer then you have to verify with your BHIM pin as well as OTP to your mobile.Now Paytm will provide you a UPI address linked to your bank account."
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

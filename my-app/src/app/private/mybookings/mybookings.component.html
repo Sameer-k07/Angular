@@ -1,0 +1,38 @@
+
+
+<button class="btn success" (click)=upcoming()>UPCOMING </button>
+
+<button class="btn success" (click)=bookbooking()>PAST</button>
+<br>
+
+<div class="box">
+<div class="data" *ngIf="upcomingd">
+        
+<ul *ngFor="let book of mybooking">
+  <div id="date"> {{book.date}}</div>
+ 
+  <span id="s" style="float:right">
+      <p [ngStyle]="{'color':book.status === 'pending' ? 'blue': 'red'}"> {{book.status}}</p>
+  </span>
+  <div id="name">{{book.name}}</div>
+  <div id="add">{{book.address}}</div>
+</ul>
+
+</div>
+</div>
+<div class="mybox">
+<div class="box">
+    <div class="data" *ngIf="pastd">            
+    <ul *ngFor="let p of pastbook">
+        <div id="date"> {{p.date}}</div>
+ 
+        <span id="s" style="float:right" >
+          {{p.status}}
+        </span>
+        <div id="name">{{p.name}}</div>
+        <div id="add">{{p.address}}</div>
+    </ul>
+      </div>
+    </div>
+  </div>
+    

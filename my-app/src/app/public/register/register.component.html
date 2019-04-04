@@ -1,0 +1,55 @@
+<div class="login-page">
+    <h1 style="color:rgb(18, 204, 18); text-align:center">Register</h1>
+  <div class="myform">
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm.value)">
+ 
+  <div class="grid-container">
+ <label >FIRST NAME
+  <input  type="text" formControlName="firstName" id="firstname" name="firstName" placeholder="Firstname" required/>
+  <div class="alert" *ngIf="!profileForm.controls['firstName'].valid && profileForm.controls['firstName'].touched">{{alert}}</div>
+</label> 
+  <label >LAST NAME
+  <input type="text" formControlName="lastName" id="lastname" name="lastName" placeholder="Lastname" required/>
+  <div class="alert" *ngIf="!profileForm.controls['lastName'].valid && profileForm.controls['lastName'].touched">{{alert}}</div>
+</label>
+
+  <label >EMAIL ADDRESS
+  <input type="text" formControlName="email" id="email" name="email" placeholder="Email Address" required/>
+  <div class="alert" *ngIf="!profileForm.controls['email'].valid && profileForm.controls['email'].touched">{{alert}}</div>
+</label>
+
+  <label>PHONE NUMBER
+  <input type="text" formControlName="phoneno" id="phoneno" name="phoneno" placeholder="Phone Number" required/>
+  <div class="alert" *ngIf="!profileForm.controls['phoneno'].valid && profileForm.controls['phoneno'].touched">{{alert}}</div>
+</label>
+
+  <label>ADDRESS
+  <input type="text" formControlName="Address" id="Address" name="Address" placeholder="Address" required/>
+  <div class="alert" *ngIf="!profileForm.controls['Address'].valid && profileForm.controls['Address'].touched">{{alert}}</div>
+  
+</label>
+
+  <label >BRIEF MEDICAL HISTORY OF THE PATIENT(optional)
+  <input type="text"formControlName="History" id="History" name="History" placeholder="(optional)"/>
+  <div class="alert" *ngIf="!profileForm.controls['History'].valid && profileForm.controls['History'].touched">{{alert}}</div>  
+</label>
+
+  <label >PASSWORD
+  <input type="password" formControlName="Password" id="Password" name="Password" placeholder="Password" required/>
+  <div class="alert" *ngIf="!profileForm.controls['Password'].valid && profileForm.controls['Password'].touched">{{alert}}</div>
+
+</label>
+
+  <label >CONFIRM PASSWORD
+<input type="password" formControlName="CnfPassword" id="CnfPassword" name="CnfPassword" placeholder="Confirm Password" appConfirmPasswordValidator="Password" required/>
+<div *ngIf="profileForm.get('CnfPassword').hasError('notEqual')">Password and Confirm Password do not match!</div>
+</label>
+</div>
+  
+  <button style="width:50%" >Register</button>
+  <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
+  
+</form>
+</div>
+</div>

@@ -5,6 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+// authgaurd implemented using canActivate so that the not registered user cannot navigation hrough urls
 export class AuthgaurdService {
 
   constructor( 

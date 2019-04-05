@@ -11,7 +11,11 @@ import {  Validator, NG_VALIDATORS, AbstractControl} from '@angular/forms';
         multi :true
     }] 
 })
-export class ConfirmPasswordDirective implements Validator
+
+
+//this directive checks whether the password and confirm password 
+// field matches
+export class ConfirmPasswordDirective implements Validator 
 {
     @Input() appConfirmPasswordValidator: string;
     validate( control : AbstractControl) : {[key:string]:any} | null

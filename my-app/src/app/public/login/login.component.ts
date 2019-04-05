@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit { 
   signupform: FormGroup;
   credentials = {
     email:"",
@@ -33,7 +33,10 @@ export class LoginComponent implements OnInit {
 
   }
 details;
-  login = function(user)
+//on click of login button the function is being executed in which details are being fetched 
+//   and when the user is valid the route is navigated to the navbar/profile
+
+  login = function(user) 
   {
     user;
     this.credentials.email = this.signupform.get('email').value;

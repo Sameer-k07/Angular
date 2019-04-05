@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
 export class RegisterService {
 
   constructor(private http: HttpClient) { }
+  // service to post the data enterd in the form
  public postData(obj){
 console.log(obj);
     return this.http.post("http://localhost:3000/register",obj);

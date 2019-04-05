@@ -13,9 +13,6 @@ export class MybookingsComponent implements OnInit {
   upcomingd:boolean;
   pastd : boolean;
   constructor(private getbookingservice :GetbookingsService) { }
-
-
-
   ngOnInit() {
     this.upcomingd = true;
     
@@ -26,20 +23,18 @@ export class MybookingsComponent implements OnInit {
       });
     }
   
-    
   bookbooking(){
     this.getbookingservice.getpastbookings().subscribe(response => {
       this.pastbook = response;
 
-    this.pastd= true;
-    this.upcomingd = false;
+    this.pastd= true;           //pastbooking will be seen
+    this.upcomingd = false;     //upcoming bookings will be hidden
     });
   }
-
   upcoming()
   {
-    this.upcomingd = true;
-    this.pastd= false;
+    this.upcomingd = true;         //upcoming booking will be seen
+    this.pastd= false;            //pastbooking will be hidden
   }
 
 

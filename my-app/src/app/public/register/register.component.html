@@ -16,7 +16,7 @@
 </label>
 
   <label >EMAIL ADDRESS
-  <input type="text" formControlName="email" id="email" name="email" placeholder="Email Address" required/>
+  <input type="email" formControlName="email" id="email" name="email" placeholder="Email Address" required/>
   <div class="alert" *ngIf="!profileForm.controls['email'].valid && profileForm.controls['email'].touched">{{alert}}</div>
 </label>
 
@@ -48,7 +48,7 @@
 </label>
 </div>
   
-  <button style="width:50%" >Register</button>
+  <button style="width:50%" [disabled]="!profileForm.valid">Register</button>
   <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
   
 </form>

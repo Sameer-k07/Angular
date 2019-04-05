@@ -9,6 +9,8 @@ import { RegisterService } from './register.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+
+// this component is made for the registeration form
 export class RegisterComponent implements OnInit {
   userdata;
   alert : string= "Field required!";
@@ -17,39 +19,24 @@ export class RegisterComponent implements OnInit {
   profileForm = this.fb.group({
     firstName: ['', Validators.required],
     lastName: ['', Validators.required],
-    email: ['', Validators.required],
-    phoneno: ['', Validators.required],
+    email: ['', Validators.compose([Validators.required, Validators.email])],
+    phoneno: ['', Validators.compose([Validators.required,Validators.minLength(10),Validators.maxLength(10)])],
     Address: ['', Validators.required],
     History: [''],
     Password: ['', Validators.required],
     CnfPassword: ['', Validators.required],
    
   });
-  
-// {
-//   alert("Enter valid values")
-// }
-
+  //on click of register button the function is being executed in which details are being posted
+//   and the route is navigated to the navbar/profile
   onSubmit = function(myuser) {
-    // if(this.profileForm.status=="VALID"){
-    //   console.log("form submitted");
+    
       this.registerservice.postData(this.profileForm.value).subscribe(data =>{
         this.userdata = data;
-        // console.log(this.profileForm.value.email);
-        
         this.router.navigate(['/login']);
       })
-      
-      
-
-  
 }
 
 ngOnInit(){
-
-
 }
-
-
-
 }

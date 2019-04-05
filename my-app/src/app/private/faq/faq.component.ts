@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { GetbookingsService } from '../mybookings/getbookings.service';
 
-
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.css']
 })
+
+// faq from db.json are fetch in the form of accordion
 export class FaqComponent implements OnInit {
 
 myfaq;

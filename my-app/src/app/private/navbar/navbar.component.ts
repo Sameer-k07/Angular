@@ -16,10 +16,10 @@ header : string;
 
   ngOnInit() {
     this.user = localStorage.getItem('user');
-    console.log(JSON.parse(this.user));
+    // console.log(JSON.parse(this.user));
     const t = JSON.parse(this.user);
     this.Name = t[0].firstName;
-    console.log(this.Name);
+    
   }
   logout(){
     localStorage.clear();

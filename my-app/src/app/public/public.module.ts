@@ -5,11 +5,13 @@ import { LoginComponent } from './login/login.component';
 import {PublicRoutingModule} from './public-routing.module';
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { GetServiceService } from './login/get-service.service';
-import { RegisterService } from './register/register.service';
+
+
 
 import { from } from 'rxjs';
 import { ConfirmPasswordDirective } from './register/passwordcheck/confirmpass.directive';
+import { GetServiceService } from './login/get-service.service';
+import { RegisterService } from './register/register.service';
 
 @NgModule({
   declarations: [RegisterComponent, LoginComponent, ConfirmPasswordDirective],
@@ -21,6 +23,6 @@ import { ConfirmPasswordDirective } from './register/passwordcheck/confirmpass.d
     HttpClientModule
   
   ],
-  providers: [GetServiceService,RegisterService]
+  providers: [GetServiceService,RegisterService ]
 })
 export class PublicModule { }

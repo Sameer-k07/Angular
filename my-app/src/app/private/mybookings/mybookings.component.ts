@@ -21,6 +21,7 @@ export class MybookingsComponent implements OnInit {
     
       this.getbookingservice.getbookings().subscribe(response => {
         this.mybooking = response;
+       
      
       });
     }
@@ -29,8 +30,7 @@ export class MybookingsComponent implements OnInit {
   bookbooking(){
     this.getbookingservice.getpastbookings().subscribe(response => {
       this.pastbook = response;
-     console.log(response);
-    console.log(this.pastbook);
+
     this.pastd= true;
     this.upcomingd = false;
     });

@@ -49,7 +49,7 @@ details;
      {
        localStorage.setItem('user', JSON.stringify(response));
        localStorage.setItem('user_cred', "true");
-       console.log("valid user");
+      //  console.log("valid user");
        this.router.navigate(['/navbar/profile']);
      }
     

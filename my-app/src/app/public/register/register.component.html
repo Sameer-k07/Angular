@@ -7,8 +7,9 @@
   <div class="grid-container">
  <label >FIRST NAME
   <input  type="text" formControlName="firstName" id="firstname" name="firstName" placeholder="Firstname" required/>
-  <div class="alert" *ngIf="!profileForm.controls['firstName'].valid && profileForm.controls['firstName'].touched">{{alert}}</div>
+  <div class="alert" id="val" *ngIf="!profileForm.controls['firstName'].valid && profileForm.controls['firstName'].touched">{{alert}}</div>
 </label> 
+
   <label >LAST NAME
   <input type="text" formControlName="lastName" id="lastname" name="lastName" placeholder="Lastname" required/>
   <div class="alert" *ngIf="!profileForm.controls['lastName'].valid && profileForm.controls['lastName'].touched">{{alert}}</div>

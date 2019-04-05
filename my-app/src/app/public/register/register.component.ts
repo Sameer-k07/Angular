@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, NgForm,Validators } from '@angular/forms';
-import {RegisterService} from './register.service';
+
+
+import { RegisterService } from './register.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',

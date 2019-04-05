@@ -6,8 +6,8 @@ import { PublicModule } from './public/public.module';
 import { PrivateModule } from './private/private.module';
 import { FormsModule, ReactiveFormsModule } from'@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { GetServiceService } from './public/login/get-service.service';
-import { RegisterService } from './public/register/register.service';
+// import { GetServiceService } from './public/login/get-service.service';
+// import { RegisterService } from './public/register/register.service';
 
 
 

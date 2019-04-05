@@ -14,7 +14,7 @@ myfaq;
   ngOnInit() {
     this.getfaqservice.getfaq().subscribe(response => {
       this.myfaq = response;
-     console.log(this.myfaq);
+    
     });
     
   }

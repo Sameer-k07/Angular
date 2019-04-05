@@ -6,7 +6,7 @@ import { PrivateroutingModule } from './privaterouting.module';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
 import { MybookingsComponent } from './mybookings/mybookings.component';
 import { FaqComponent } from './faq/faq.component';
-import { UpdateService } from './profile/update.service';
+
 import { GetbookingsService } from './mybookings/getbookings.service';
 import { AuthgaurdService } from './navbar/authgaurd.service';
 
@@ -18,6 +18,6 @@ import { AuthgaurdService } from './navbar/authgaurd.service';
  ReactiveFormsModule,
   FormsModule
   ],
-  providers: [UpdateService,GetbookingsService,AuthgaurdService]
+  providers: [GetbookingsService,AuthgaurdService]
 })
 export class PrivateModule { }

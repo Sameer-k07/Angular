@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, Validators, NgForm, FormGroup } from '@angular/forms';
-import { UpdateService } from './update.service';
+import { GetbookingsService } from '../mybookings/getbookings.service';
 
 @Component({
   selector: 'app-profile',
@@ -21,7 +21,7 @@ export class ProfileComponent implements OnInit {
     id:'' 
     }
   @ViewChild('updateform') public updateForm : NgForm;
-  constructor(private fb: FormBuilder , private updateservice: UpdateService, private router : Router) { }
+  constructor(private fb: FormBuilder , private updateservice: GetbookingsService, private router : Router) { }
   updateform = this.fb.group({
     'firstName': [JSON.parse(localStorage.getItem('user'))[0].firstName, Validators.required],
     'email': [JSON.parse(localStorage.getItem('user'))[0].email, Validators.required],
